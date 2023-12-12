@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: integration-service
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hongweiliu-tenant/integration-service/integration-service@sha256:ef871eb781c20fd2603563a098ee1fb3d6969dcd24038e6cf2cca42884be1224
+        name: container-image
+        resources: {}
+status: {}
